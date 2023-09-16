@@ -1,13 +1,16 @@
-import './globals.css';
-import Providers from './Providers';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import moment from "moment";
+import "./globals.css";
+import Providers from "./Providers";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "moment/locale/ko";
 
-const inter = Inter({ subsets: ['latin'] });
+moment.locale("ko");
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Oh My Luna',
-  description: '오늘의 달',
+  title: "no hand day",
+  description: "손 없는 달",
 };
 
 export default function RootLayout({

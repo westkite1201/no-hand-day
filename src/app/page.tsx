@@ -1,4 +1,5 @@
-import Home from '@views/home';
+import useDarkMode from "@hooks/queries/useDarkMode";
+import Home from "@views/home";
 
 export default function HomePage() {
   return (

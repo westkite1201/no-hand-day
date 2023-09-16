@@ -1,22 +1,26 @@
-import { PageMeta } from './types';
+import { PageMeta } from "./types";
 
 export const DEFAULT_META: PageMeta = {
-  title: 'title',
-  description: 'description.',
-  image: '',
+  title: "title",
+  description: "description.",
+  image: "",
 };
 
 export const getCustomMeta = (path: string): PageMeta => {
   const basePath = path;
 
   switch (basePath) {
-    case '/test':
+    case "/test":
       return {
         title: ``,
-        description: '',
-        image: '',
+        description: "",
+        image: "",
       };
     default:
-      return null;
+      return {
+        title: ``,
+        description: "",
+        image: "",
+      };
   }
 };

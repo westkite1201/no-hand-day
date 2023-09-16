@@ -1,12 +1,12 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
-
-.nanummyeongjo * {
-  font-family: 'Nanum Myeongjo', serif;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+.nanummyeongjo * {
+  font-family: "Nanum Myeongjo", serif;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
